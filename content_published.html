@@ -5,341 +5,272 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Content Successfully Published - {!Content_Planner__c.Name}</title>
 <style>
-  body {
-    margin: 0; padding: 0; background-color: #e8edf5;
-  }
-  @media only screen and (max-width: 600px) {
-    .wrapper {
-      width: 100% !important;
-    }
+  body { margin:0; padding:0; background-color:#e8edf5; }
+  table { border-collapse:collapse; }
+
+  @media only screen and (max-width:600px) {
+    .wrapper        { width:100% !important; }
+    .grid-half      { width:100% !important; display:block !important;
+                      border-right:none !important;
+                      border-bottom:1px solid #e2e8f0 !important; }
+    .grid-half-last { width:100% !important; display:block !important; }
+    .plat-cell      { width:100% !important; display:block !important;
+                      border-right:none !important;
+                      border-bottom:1px solid #e2e8f0 !important; }
+    .plat-last      { width:100% !important; display:block !important; }
+    .footer-left    { display:block !important; width:100% !important;
+                      padding-bottom:12px !important; }
+    .footer-mid     { display:block !important; width:100% !important;
+                      border-left:none !important; padding-left:0 !important;
+                      border-top:1px solid #e2e8f0; padding-top:12px !important; }
   }
 </style>
 </head>
-<body style="margin:0; padding:0; background-color:#e8edf5; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;">
+<body style="margin:0;padding:0;background-color:#e8edf5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;">
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e8edf5" style="background-color: #e8edf5; width: 100%;">
-  <tr>
-    <td align="center" style="padding: 20px 10px;">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e8edf5">
+<tr>
+<td align="center" style="padding:20px 10px;">
 
-      <!-- Main card wrapper -->
-      <table width="620" border="0" cellpadding="0" cellspacing="0" class="wrapper" bgcolor="#ffffff" style="max-width: 620px; width: 100%; background-color: #ffffff; border-radius: 20px; overflow: hidden; border: 1px solid #e2e8f0; border-collapse: separate;">
-        
-        <!-- HEADER IMAGE -->
-        <tr>
-          <td align="center" bgcolor="#edf1f9" style="background-color: #edf1f9; line-height: 0; font-size: 0; padding: 0;">
-            <!-- Upload these images to a public GitHub repository and replace YOUR_GITHUB_USERNAME and YOUR_REPO_NAME below -->
-            <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/header.png" width="620" alt="Content Planner - Content Management System" style="display: block; margin: 0 auto; width: 100%; max-width: 638px; height: auto; border: 0;" border="0">
-          </td>
-        </tr>
+  <!-- ═══ MAIN CARD ═══ -->
+  <table width="620" border="0" cellpadding="0" cellspacing="0" class="wrapper"
+         style="max-width:620px;width:100%;background:#ffffff;border-radius:20px;
+                overflow:hidden;border:1px solid #e2e8f0;border-collapse:separate;">
 
-        <!-- CONTENT BODY -->
-        <tr>
-          <td bgcolor="#edf1f9" style="background-color: #edf1f9; padding: 0px 22px;">
-            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="background-color: #ffffff; border-radius: 0px; padding: 26px 26px 30px; border: 1px solid #e2e8f0; border-bottom: none; border-collapse: separate;">
-              
-              <!-- Greeting -->
-              <tr>
-                <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 15px; font-weight: 600; color: #1e293b; padding-bottom: 14px; border-bottom: 1px solid #e8eef6;">
-                  Hello <span style="color: #2563eb;">Narendra,</span>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 13px; color: #64748b; padding-top: 12px; padding-bottom: 24px; line-height: 1.6;">
-                  Your content has been published successfully. Here are the publishing details.
-                </td>
-              </tr>
+    <!-- ══ HEADER BAR ══ -->
+    <tr>
+      <td bgcolor="#2563eb" style="background-color:#2563eb;padding:24px 28px;text-align:center;">
+        <h2 style="margin:0;font-size:18px;font-weight:800;color:#ffffff;
+                   letter-spacing:1px;text-transform:uppercase;">
+          Content Planner
+        </h2>
+        <div style="font-size:12px;color:#bfdbfe;margin-top:4px;">
+          Content Management System
+        </div>
+      </td>
+    </tr>
 
-              <!-- Content Summary Header -->
-              <tr>
-                <td style="padding-bottom: 13px;">
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td width="26" height="26" align="center" valign="middle" style="background-color: #eff6ff; border-radius: 6px; border-collapse: separate;">
-                        <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/document.png" width="14" height="14" alt="Content Summary" style="display: block; border: 0;" border="0">
-                      </td>
-                      <td style="padding-left: 8px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 11.5px; font-weight: 700; color: #2563eb; letter-spacing: 0.8px; text-transform: uppercase;">
-                        Content Summary
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+    <!-- ══ HERO BANNER ══ -->
+    <tr>
+      <td align="center" style="padding:32px 30px 28px;border-bottom:1px solid #e8eef6;">
+        <div style="font-size:32px;margin-bottom:10px;">🎉</div>
+        <h1 style="margin:10px 0 8px;font-size:22px;font-weight:800;
+                   color:#1e293b;letter-spacing:-0.3px;">
+          Content Successfully Published!
+        </h1>
+        <p style="margin:0;font-size:14px;color:#64748b;line-height:1.55;">
+          Great work! Your content is now live and ready for your audience.
+        </p>
+      </td>
+    </tr>
 
-              <!-- Content Summary Grid -->
-              <tr>
-                <td style="padding-bottom: 24px;">
-                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid #e2e8f0; border-radius: 13px; border-collapse: separate; overflow: hidden;">
-                    <!-- Row 1 -->
-                    <tr>
-                      <td width="50%" valign="middle" style="padding: 15px 16px; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
-                        <table border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td width="36" height="36" align="center" valign="middle" style="background-color: #eff6ff; border-radius: 9px; border-collapse: separate;">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/document.png" width="18" height="18" alt="Title" style="display: block; border: 0;" border="0">
-                            </td>
-                            <td style="padding-left: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                              <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-bottom: 3px;">Title</div>
-                              <div style="font-size: 13.5px; font-weight: 700; color: #1e293b; line-height: 1.2;">{!Content_Planner__c.Name}</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td width="50%" valign="middle" style="padding: 15px 16px; border-bottom: 1px solid #e2e8f0;">
-                        <table border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td width="36" height="36" align="center" valign="middle" style="background-color: #f0fdf4; border-radius: 9px; border-collapse: separate;">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/bookmark.png" width="18" height="18" alt="Status" style="display: block; border: 0;" border="0">
-                            </td>
-                            <td style="padding-left: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                              <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-bottom: 3px;">Status</div>
-                              <div style="font-size: 13.5px; font-weight: 700; color: #16a34a; line-height: 1.2;">Published</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Row 2 -->
-                    <tr>
-                      <td width="50%" valign="middle" style="padding: 15px 16px; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
-                        <table border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td width="36" height="36" align="center" valign="middle" style="background-color: #faf5ff; border-radius: 9px; border-collapse: separate;">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/folder.png" width="18" height="18" alt="Category" style="display: block; border: 0;" border="0">
-                            </td>
-                            <td style="padding-left: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                              <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-bottom: 3px;">Category</div>
-                              <div style="font-size: 13.5px; font-weight: 700; color: #1e293b; line-height: 1.2;">{!Content_Planner__c.Category__c}</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td width="50%" valign="middle" style="padding: 15px 16px; border-bottom: 1px solid #e2e8f0;">
-                        <table border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td width="36" height="36" align="center" valign="middle" style="background-color: #fff7ed; border-radius: 9px; border-collapse: separate;">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/image.png" width="18" height="18" alt="Content Type" style="display: block; border: 0;" border="0">
-                            </td>
-                            <td style="padding-left: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                              <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-bottom: 3px;">Content Type</div>
-                              <div style="font-size: 13.5px; font-weight: 700; color: #1e293b; line-height: 1.2;">{!Content_Planner__c.Content_Type__c}</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                    <!-- Row 3 -->
-                    <tr>
-                      <td width="50%" valign="middle" style="padding: 15px 16px; border-right: 1px solid #e2e8f0;">
-                        <table border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td width="36" height="36" align="center" valign="middle" style="background-color: #fff1f2; border-radius: 9px; border-collapse: separate;">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/fire-flame.png" width="18" height="18" alt="Priority" style="display: block; border: 0;" border="0">
-                            </td>
-                            <td style="padding-left: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                              <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-bottom: 3px;">Priority</div>
-                              <div style="font-size: 13.5px; font-weight: 700; color: #1e293b; line-height: 1.2;">
-                                <table border="0" cellpadding="0" cellspacing="0" style="background-color: #fef2f2; border: 1px solid #fecaca; border-radius: 20px; border-collapse: separate;">
-                                  <tr>
-                                    <td style="padding: 2px 11px; font-size: 11.5px; font-weight: 600; color: #ef4444; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                                      {!Content_Planner__c.Priority__c}
-                                    </td>
-                                  </tr>
-                                </table>
-                              </div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td width="50%" valign="middle" style="padding: 15px 16px;">
-                        <table border="0" cellpadding="0" cellspacing="0">
-                          <tr>
-                            <td width="36" height="36" align="center" valign="middle" style="background-color: #eef2ff; border-radius: 9px; border-collapse: separate;">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/calendar.png" width="18" height="18" alt="Publish Date" style="display: block; border: 0;" border="0">
-                            </td>
-                            <td style="padding-left: 11px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                              <div style="font-size: 11px; color: #94a3b8; font-weight: 500; margin-bottom: 3px;">Publish Date</div>
-                              <div style="font-size: 13.5px; font-weight: 700; color: #1e293b; line-height: 1.2;">{!Content_Planner__c.Publish_Date__c}</div>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+    <!-- ══ BODY ══ -->
+    <tr>
+      <td bgcolor="#edf1f9" style="background-color:#edf1f9;padding:16px 16px 0px 22px;">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0"
+               style="background:#ffffff;padding:26px 26px 30px;
+                      border:1px solid #e2e8f0;border-bottom:none;border-collapse:separate;">
 
-              <!-- Published On Header -->
-              <tr>
-                <td style="padding-bottom: 13px;">
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td width="26" height="26" align="center" valign="middle" style="background-color: #eff6ff; border-radius: 6px; border-collapse: separate;">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
-                          <circle cx="12" cy="12" r="9" stroke="#2563eb" stroke-width="2"/>
-                          <path d="M12 3C12 3 8 7 8 12s4 9 4 9 4-4 4-9-4-9-4-9z" stroke="#2563eb" stroke-width="1.6"/>
-                          <line x1="3" y1="12" x2="21" y2="12" stroke="#2563eb" stroke-width="1.6"/>
-                        </svg>
-                      </td>
-                      <td style="padding-left: 8px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 11.5px; font-weight: 700; color: #2563eb; letter-spacing: 0.8px; text-transform: uppercase;">
-                        Published On
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+          <!-- Greeting -->
+          <tr>
+            <td style="font-size:15px;font-weight:600;color:#1e293b;
+                       padding-bottom:14px;border-bottom:1px solid #e8eef6;">
+              Hello <span style="color:#2563eb;">Narendra,</span>
+            </td>
+          </tr>
+          <tr>
+            <td style="font-size:13px;color:#64748b;padding-top:12px;
+                       padding-bottom:24px;line-height:1.6;">
+              Your content has been published successfully. Here are the publishing details.
+            </td>
+          </tr>
 
-              <!-- Platforms Grid -->
-              <tr>
-                <td style="padding-bottom: 20px;">
-                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid #e2e8f0; border-radius: 13px; border-collapse: separate; overflow: hidden;">
-                    <tr>
-                      <!-- Instagram -->
-                      <td width="33.33%" align="center" valign="middle" style="padding: 20px 8px; border-right: 1px solid #e2e8f0;">
-                        <table border="0" cellpadding="0" cellspacing="0" align="center">
-                          <tr>
-                            <td align="center" height="50" valign="middle">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/instagram.png" width="50" height="50" alt="Instagram" style="display: block; border: 0;" border="0">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td align="center" style="padding-top: 9px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; color: #475569; font-weight: 500;">
-                              Instagram
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <!-- LinkedIn -->
-                      <td width="33.33%" align="center" valign="middle" style="padding: 20px 8px; border-right: 1px solid #e2e8f0;">
-                        <table border="0" cellpadding="0" cellspacing="0" align="center">
-                          <tr>
-                            <td align="center" height="50" valign="middle">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/linkedin.png" width="50" height="50" alt="LinkedIn" style="display: block; border: 0;" border="0">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td align="center" style="padding-top: 9px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; color: #475569; font-weight: 500;">
-                              LinkedIn
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <!-- Facebook -->
-                      <td width="33.33%" align="center" valign="middle" style="padding: 20px 8px;">
-                        <table border="0" cellpadding="0" cellspacing="0" align="center">
-                          <tr>
-                            <td align="center" height="50" valign="middle">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/facebook.png" width="50" height="50" alt="Facebook" style="display: block; border: 0;" border="0">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td align="center" style="padding-top: 9px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12px; color: #475569; font-weight: 500;">
-                              Facebook
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+          <!-- ─ Section Label: Content Summary ─ -->
+          <tr>
+            <td style="padding-bottom:13px;font-size:11px;font-weight:700;
+                       color:#2563eb;letter-spacing:0.9px;text-transform:uppercase;">
+              📊 Content Summary
+            </td>
+          </tr>
 
-              <!-- Tip box -->
-              <tr>
-                <td style="padding-bottom: 24px;">
-                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 11px; border-collapse: separate;">
-                    <tr>
-                      <td width="34" valign="top" style="padding: 14px 0 14px 16px;">
-                        <table width="34" height="34" border="0" cellpadding="0" cellspacing="0" style="background-color: #22c55e; border-radius: 50%; border-collapse: separate;">
-                          <tr>
-                            <td align="center" valign="middle">
-                              <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/idea.png" width="16" height="16" alt="Tip" style="display: block; border: 0;" border="0">
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                      <td valign="middle" style="padding: 14px 16px 14px 12px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 12.5px; color: #166534; line-height: 1.55;">
-                        <strong>Tip:</strong> Track engagement metrics within the first 24 hours to maximize reach and audience interaction.
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
+          <!-- ─ Details Grid ─ -->
+          <tr>
+            <td style="padding-bottom:24px;">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                     style="border:1px solid #e2e8f0;border-radius:13px;
+                            border-collapse:separate;overflow:hidden;">
 
-              <!-- CTA Buttons -->
-              <tr>
-                <td align="center" style="padding-bottom: 12px;">
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td align="center" bgcolor="#2563eb" style="background-color: #2563eb; border-radius: 9px; border-collapse: separate;">
-                        <a href="https://orgfarm-f2b0dc3602-dev-ed.develop.lightning.force.com/lightning/r/Dashboard/01Zg5000003ieCyEAI/view?queryScope=userFolders" target="_blank" style="display: block; padding: 13px 42px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 700; color: #ffffff; text-decoration: none; letter-spacing: 0.2px;">
-                          View Content Dashboard &nbsp;&#8594;
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <tr>
-                <td align="center">
-                  <a href="https://orgfarm-f2b0dc3602-dev-ed.develop.lightning.force.com/lightning/r/Content_Planner__c/{!Content_Planner__c.Id}/view" target="_blank" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 13px; font-weight: 600; color: #2563eb; text-decoration: none;">
-                    View Content Details in Salesforce &nbsp;&#8594;
-                  </a>
-                </td>
-              </tr>
+                <!-- Row 1: Title | Status -->
+                <tr>
+                  <td class="grid-half" width="50%" valign="middle"
+                      style="padding:15px 16px;border-right:1px solid #e2e8f0;
+                             border-bottom:1px solid #e2e8f0;">
+                    <div style="font-size:11px;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px;">📄 Title</div>
+                    <div style="font-size:13.5px;font-weight:700;color:#1e293b;line-height:1.2;">{!Content_Planner__c.Name}</div>
+                  </td>
+                  <td class="grid-half-last" width="50%" valign="middle"
+                      style="padding:15px 16px;border-bottom:1px solid #e2e8f0;">
+                    <div style="font-size:11px;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px;">✅ Status</div>
+                    <div style="font-size:13.5px;font-weight:700;color:#16a34a;line-height:1.2;">Published</div>
+                  </td>
+                </tr>
 
-            </table>
-          </td>
-        </tr>
+                <!-- Row 2: Category | Content Type -->
+                <tr>
+                  <td class="grid-half" width="50%" valign="middle"
+                      style="padding:15px 16px;border-right:1px solid #e2e8f0;
+                             border-bottom:1px solid #e2e8f0;">
+                    <div style="font-size:11px;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px;">📁 Category</div>
+                    <div style="font-size:13.5px;font-weight:700;color:#1e293b;line-height:1.2;">{!Content_Planner__c.Category__c}</div>
+                  </td>
+                  <td class="grid-half-last" width="50%" valign="middle"
+                      style="padding:15px 16px;border-bottom:1px solid #e2e8f0;">
+                    <div style="font-size:11px;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px;">🖼️ Content Type</div>
+                    <div style="font-size:13.5px;font-weight:700;color:#1e293b;line-height:1.2;">{!Content_Planner__c.Content_Type__c}</div>
+                  </td>
+                </tr>
 
-        <!-- FOOTER -->
-        <tr>
-          <td bgcolor="#edf1f9" style="background-color: #edf1f9; padding: 0 22px 18px;">
-            <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f5f5f5" style="background-color: #f5f5f5; border-radius: 0 0 18px 18px; padding: 18px 24px; border: 1px solid #e2e8f0; border-collapse: separate;">
-              <tr>
-                <!-- Left: brand logo + text -->
-                <td valign="middle" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;">
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                      <td width="36" height="36" align="center" valign="middle" style="border-collapse: separate;">
-                        <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/edit-interface-sign.png" width="36" height="36" alt="Content Planner" style="display: block; border: 0;" border="0">
-                      </td>
-                      <td style="padding-left: 10px; line-height: 1.2;">
-                        <div style="font-size: 13px; font-weight: 700; color: #1e293b;">Content Planner</div>
-                        <div style="font-size: 11px; color: #64748b; margin-top: 2px;">
-                          Powered by Salesforce
-                          <svg width="22" height="14" viewBox="0 0 24 16" fill="#00a1e0" style="vertical-align: middle; margin-left: 2px; display: inline-block;">
-                            <path d="M19.8 6.1c-.7-3.1-3.5-5.4-6.8-5.4-2.5 0-4.7 1.3-6 3.2C6.6 3.8 6.1 3.7 5.6 3.7c-2.9 0-5.3 2.4-5.3 5.3s2.4 5.3 5.3 5.3h13.7c2.8 0 5-2.2 5-5 0-2.6-2-4.8-4.5-4.9z"/>
-                          </svg>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <!-- Center: automated notification with border-left divider -->
-                <td valign="middle" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 11.5px; color: #64748b; line-height: 1.6; border-left: 1px solid #e2e8f0; padding-left: 24px;">
-                  This is an automated notification.<br>
-                  Please do not reply to this email.
-                </td>
-                <!-- Right: Shield check logo -->
-                <td width="28" align="right" valign="middle" style="padding-left: 12px;">
-                  <img src="https://raw.githubusercontent.com/Narendrakaduru/CPD-Dashboard/main/images/security.png" width="28" height="28" alt="Security" style="display: block; border: 0;" border="0">
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+                <!-- Row 3: Priority | Publish Date -->
+                <tr>
+                  <td class="grid-half" width="50%" valign="middle"
+                      style="padding:15px 16px;border-right:1px solid #e2e8f0;">
+                    <div style="font-size:11px;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px;">🔥 Priority</div>
+                    <div style="font-size:13.5px;font-weight:700;color:#ef4444;line-height:1.2;">{!Content_Planner__c.Priority__c}</div>
+                  </td>
+                  <td class="grid-half-last" width="50%" valign="middle"
+                      style="padding:15px 16px;">
+                    <div style="font-size:11px;color:#94a3b8;font-weight:500;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:4px;">📅 Publish Date</div>
+                    <div style="font-size:13.5px;font-weight:700;color:#1e293b;line-height:1.2;">{!Content_Planner__c.Publish_Date__c}</div>
+                  </td>
+                </tr>
 
-        <!-- COPYRIGHT -->
-        <tr>
-          <td bgcolor="#edf1f9" align="center" style="background-color: #edf1f9; padding: 12px 22px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 11px; color: #94a3b8;">
-            © 2026 Content Management System. All rights reserved.
-          </td>
-        </tr>
+              </table>
+            </td>
+          </tr>
 
-      </table>
+          <!-- ─ Section Label: Published On ─ -->
+          <tr>
+            <td style="padding-bottom:13px;font-size:11px;font-weight:700;
+                       color:#2563eb;letter-spacing:0.9px;text-transform:uppercase;">
+              🌐 Published On
+            </td>
+          </tr>
 
-    </td>
-  </tr>
+          <!-- ─ Platforms ─ -->
+          <tr>
+            <td style="padding-bottom:20px;">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                     style="border:1px solid #e2e8f0;border-radius:13px;
+                            border-collapse:separate;overflow:hidden;">
+                <tr>
+                  <td class="plat-cell" width="33.33%" align="center" valign="middle"
+                      style="padding:18px 8px;border-right:1px solid #e2e8f0;font-size:14px;font-weight:700;color:#e1306c;">
+                    📸 Instagram
+                  </td>
+                  <td class="plat-cell" width="33.33%" align="center" valign="middle"
+                      style="padding:18px 8px;border-right:1px solid #e2e8f0;font-size:14px;font-weight:700;color:#0077b5;">
+                    💼 LinkedIn
+                  </td>
+                  <td class="plat-last" width="33.33%" align="center" valign="middle"
+                      style="padding:18px 8px;font-size:14px;font-weight:700;color:#1877f2;">
+                    👥 Facebook
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ─ Tip Box ─ -->
+          <tr>
+            <td style="padding-bottom:24px;">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0"
+                     style="background:#f0fdf4;border:1px solid #bbf7d0;
+                            border-radius:11px;border-collapse:separate;">
+                <tr>
+                  <td valign="middle"
+                      style="padding:14px 16px;font-size:12.5px;
+                             color:#166534;line-height:1.55;">
+                    <strong>💡 Tip:</strong> Track engagement metrics within the first 24 hours to maximize reach and audience interaction.
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ─ CTA Buttons ─ -->
+          <tr>
+            <td align="center" style="padding-bottom:12px;">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" bgcolor="#2563eb"
+                      style="background-color:#2563eb;border-radius:9px;
+                             border-collapse:separate;">
+                    <a href="https://orgfarm-f2b0dc3602-dev-ed.develop.lightning.force.com/lightning/r/Dashboard/01Zg5000003ieCyEAI/view?queryScope=userFolders"
+                       target="_blank"
+                       style="display:block;padding:13px 42px;font-size:14px;
+                              font-weight:700;color:#ffffff;text-decoration:none;
+                              letter-spacing:0.2px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;">
+                      View Content Dashboard &nbsp;&#8594;
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding-bottom:6px;">
+              <a href="https://orgfarm-f2b0dc3602-dev-ed.develop.lightning.force.com/lightning/r/Content_Planner__c/{!Content_Planner__c.Id}/view"
+                 target="_blank"
+                 style="font-size:13px;font-weight:600;color:#2563eb;text-decoration:none;">
+                View Content Details in Salesforce &nbsp;&#8594;
+              </a>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ FOOTER ══ -->
+    <tr>
+      <td bgcolor="#edf1f9" style="background-color:#edf1f9;padding:0px 16px 0px 22px;">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0"
+               style="background:#f5f5f5;border-radius:0 0 18px 18px;
+                      padding:18px 24px;border:1px solid #e2e8f0;border-collapse:separate;">
+          <tr>
+            <!-- Brand -->
+            <td class="footer-left" valign="middle" style="line-height:1.2;">
+              <div style="font-size:13px;font-weight:700;color:#1e293b;">Content Planner</div>
+              <div style="font-size:11px;color:#64748b;margin-top:2px;">
+                Powered by Salesforce  &nbsp; ☁
+              </div>
+            </td>
+            <!-- Notice -->
+            <td class="footer-mid" valign="middle"
+                style="font-size:11.5px;color:#64748b;line-height:1.6;
+                       border-left:1px solid #e2e8f0;padding-left:20px;">
+              🛡️ This is an automated notification.<br>
+              Please do not reply to this email.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ══ COPYRIGHT ══ -->
+    <tr>
+      <td bgcolor="#edf1f9" align="center"
+          style="background-color:#edf1f9;padding:10px 22px 18px;
+                 font-size:11px;color:#94a3b8;">
+        &copy; 2026 Content Management System. All rights reserved.
+      </td>
+    </tr>
+
+  </table>
+  <!-- ═══ END CARD ═══ -->
+
+</td>
+</tr>
 </table>
 
 </body>
